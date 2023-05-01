@@ -18,6 +18,8 @@ I also use the font alias to trigger `-apple-system`, `Arial` font on almost web
 - `cd ubuntu-mimic-macos`
 - run: `chmod +x tweak.sh`
 - run: `./tweak.sh`
+- logout and login again.
+- tadaaaa
 
 
 ## Screenshots
