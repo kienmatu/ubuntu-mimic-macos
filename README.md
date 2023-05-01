@@ -14,6 +14,10 @@ I also use the font alias to trigger `-apple-system`, `Arial` font on almost web
 
 ## Instructions
 
+- Clone the repo
+- `cd ubuntu-mimic-macos`
+- run: `chmod +x tweak.sh`
+- run: `./tweak.sh`
 
 
 ## Screenshots

@@ -31,3 +31,6 @@ fi
 
 source ~/.profile
 ## >> is append, > is overwrite
+
+
+echo "Successfully, please logout and login again!"
