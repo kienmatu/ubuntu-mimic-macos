@@ -14,7 +14,7 @@ gsettings set org.gnome.desktop.interface monospace-font-name 'Jetbrains Mono 12
 gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Inter Bold 12'
 
 ## ALIAS
-file=~/.config/fonts.conf
+file=~/.config
 
 if [ ! -d ~/.config ]; then
   mkdir ~/.config
