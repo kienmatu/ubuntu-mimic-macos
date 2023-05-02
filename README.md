@@ -1,7 +1,7 @@
 # ubuntu-mimic-macos
 Mimic the macOS font on GNOME Ubuntu (the whole system and most websites).
-<div style="text-align:center;">
-  <img src="./screenshots/facebook_before_after.png" width="80%" style="margin:auto;">
+<div style="display:block">
+  <img src="./screenshots/facebook_before_after.png" width="80%" style="margin:3px auto;display:block">
 </div>
 
 ## Introduction
