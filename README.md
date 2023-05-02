@@ -43,18 +43,16 @@ Example:
 ```
 
 ## Screenshots
-### Before:
-Github:
-![Github](./screenshots/github_before.png)
-Stackoverflow:
-![Stackoverflow](./screenshots/stackoverflow_before.png)
-Google:
-![Google](./screenshots/google_before.png)
 
-### After
-Github:
-![Github](./screenshots/github.png)
-Stackoverflow:
-![Stackoverflow](./screenshots/stackoverflow.png)
-Google:
-![Google](./screenshots/google.png)
+| Before | After |
+| ------ | ----- |
+| ![Github Before](./screenshots/github_before.png) | ![Github After](./screenshots/github.png) |
+| ![Stackoverflow Before](./screenshots/stackoverflow_before.png) | ![Stackoverflow After](./screenshots/stackoverflow.png) |
+| ![Google Before](./screenshots/google_before.png) | ![Google After](./screenshots/google.png) |
+## Screenshots
+
+| Before | After |
+| ------ | ----- |
+| ![Github Before](./screenshots/github_before.png) | ![Github After](./screenshots/github.png) |
+| ![Stackoverflow Before](./screenshots/stackoverflow_before.png) | ![Stackoverflow After](./screenshots/stackoverflow.png) |
+| ![Google Before](./screenshots/google_before.png) | ![Google After](./screenshots/google.png) |
