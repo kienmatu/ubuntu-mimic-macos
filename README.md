@@ -1,6 +1,7 @@
 # ubuntu-mimic-macos
-Mimic macOS font on GNOME Ubuntu
+Mimic the macOS font on GNOME Ubuntu (the whole system and most websites).
 
+![](./screenshots/facebook_fonts.png)
 ## Introduction
 I want to bring the smooth font UX on macOS into Ubuntu GNOME.
 
