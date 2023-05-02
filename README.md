@@ -1,7 +1,9 @@
 # ubuntu-mimic-macos
 Mimic the macOS font on GNOME Ubuntu (the whole system and most websites).
+<div style="text-align:center;">
+  <img src="./screenshots/facebook_fonts.png" width="80%" style="margin:auto;">
+</div>
 
-![](./screenshots/facebook_fonts.png)
 ## Introduction
 I want to bring the smooth font UX on macOS into Ubuntu GNOME.
 
@@ -42,13 +44,6 @@ Example:
 ./tweak.sh -s 12 -sf
 ```
 
-## Screenshots
-
-| Before | After |
-| ------ | ----- |
-| ![Github Before](./screenshots/github_before.png) | ![Github After](./screenshots/github.png) |
-| ![Stackoverflow Before](./screenshots/stackoverflow_before.png) | ![Stackoverflow After](./screenshots/stackoverflow.png) |
-| ![Google Before](./screenshots/google_before.png) | ![Google After](./screenshots/google.png) |
 ## Screenshots
 
 | Before | After |
