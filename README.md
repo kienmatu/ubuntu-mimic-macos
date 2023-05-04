@@ -1,11 +1,11 @@
 # ubuntu-mimic-macos
-Mimic the macOS font on GNOME Ubuntu (the whole system and most websites).
+Mimic the macOS font on Ubuntu (the whole system and most websites).
 <div style="display:block">
   <img src="./screenshots/facebook_before_after.png" width="80%" style="margin:3px auto;display:block">
 </div>
 
 ## Introduction
-I want to bring the smooth font UX on macOS into Ubuntu GNOME.
+I want to bring the smooth font UX on macOS into Ubuntu GNOME/ KDE Plasma (Kubuntu).
 
 So I chose the font `Inter`, it is the font used on Figma and ElementaryOS, and it is open-source.
 
@@ -30,20 +30,25 @@ I also use the font alias to trigger `-apple-system`, `Arial` font on almost web
     chmod +x ./tweak.sh
     ```
 - run (without sudo)
+    GNOME version:
     ```bash
     ./tweak.sh
+    ``` 
+
+    Plasma version:
+    ```bash
+    ./tweak_plasma.sh
     ``` 
 - logout and login again.
 - tadaaaa
 ### Options
 - `-sf`,`--sf-mode`: Using Sans Francisco instead of Inter
-- `-s`, `--size`: Change the font size, default font size is 11.
+- `-s`, `--size`: Change the font size, default font size is 11pt.
 
 Example:
 ```bash
 ./tweak.sh -s 12 -sf
 ```
-
 ## Screenshots
 
 | Before | After |
