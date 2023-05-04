@@ -32,8 +32,6 @@ echo "Base font size is $font_size"
 
 if [ "$sf_mode" = true ] ; then
   echo "Using Sans Francisco Pro"
-  if [ "$sf_mode" = true ] ; then
-  echo "Using Sans Francisco Pro"
   # Check if SF Pro Display and SF Pro Text are already installed
   if fc-list | grep -q "SF Pro Display" && fc-list | grep -q "SF Pro Text"; then
     echo "SF Pro Display and SF Pro Text are already installed"
@@ -42,9 +40,6 @@ if [ "$sf_mode" = true ] ; then
     sudo cp -R fonts/SF_Pro/* /usr/share/fonts/truetype/SF\ Pro/
     alias_file=./fonts_SF.conf
   fi
-else
-  echo "Using Inter font"
-fi
 else
   echo "Using Inter font"
 fi
@@ -60,20 +55,17 @@ else
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
 fi
 
-
-echo "Update GNOME configuration..."
+echo "Update Plasma configuration..."
 
 # update fonts
 if [ "$sf_mode" = true ] ; then
-  gsettings set org.gnome.desktop.interface document-font-name "SF Pro Text $font_size"
-  gsettings set org.gnome.desktop.interface font-name "SF Pro Display $font_size"
-  gsettings set org.gnome.desktop.interface monospace-font-name "Jetbrains Mono $big_font_size"
-  gsettings set org.gnome.desktop.wm.preferences titlebar-font "SF Pro Display Bold $big_font_size"
+  kwriteconfig5 --group "KDE" --key "font" "SF Pro Display,$font_size,-1,5,50,0,0,0,0,0"
+  kwriteconfig5 --group "KDE" --key "smallestReadableFont" "SF Pro Text,$font_size,-1,5,50,0,0,0,0,0"
+  kwriteconfig5 --group "WM" --key "titlebarFont" "SF Pro Display Bold,$big_font_size,-1,5,50,0,0,0,0,0"
 else
-  gsettings set org.gnome.desktop.interface document-font-name "Inter $font_size"
-  gsettings set org.gnome.desktop.interface font-name "Inter Display $font_size"
-  gsettings set org.gnome.desktop.interface monospace-font-name "Jetbrains Mono $big_font_size"
-  gsettings set org.gnome.desktop.wm.preferences titlebar-font "Inter Bold $big_font_size"
+  kwriteconfig5 --group "KDE" --key "font" "Inter Display,$font_size,-1,5,50,0,0,0,0,0"
+  kwriteconfig5 --group "KDE" --key "smallestReadableFont" "Inter,$font_size,-1,5,50,0,0,0,0,0"
+  kwriteconfig5 --group "WM" --key "titlebarFont" "Inter Bold,$big_font_size,-1,5,50,0,0,0,0,0"
 fi
 ## ALIAS FILE
 config_dir=~/.config/fontconfig
@@ -83,14 +75,6 @@ if [ ! -d file ]; then
 fi
 
 sudo cp "$alias_file" "$config_dir/fonts.conf"
-
-echo "Enabling STEM Darkening..."
-
-## Enable STEM DARKENING
-## Not useful for HiDPI monitor (4K)
-if ! grep -qxF 'export FREETYPE_PROPERTIES="cff:no-stem-darkening=0"' ~/.profile; then
-  echo 'export FREETYPE_PROPERTIES="cff:no-stem-darkening=0"' >> ~/.profile
-fi
 
 ## >> is append, > is overwrite
 
