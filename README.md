@@ -4,6 +4,9 @@ Mimic the macOS font on Ubuntu (the whole system and most websites).
   <img src="./screenshots/facebook_before_after.png" width="80%" style="margin:3px auto;display:block">
 </div>
 
+> [! WARNING]
+> This repo is not being maintained anymore since I switched to use a macbook 😂.
+
 ## Introduction
 I want to bring the smooth font UX on macOS into Ubuntu GNOME/ KDE Plasma (Kubuntu).
 
