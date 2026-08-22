@@ -8,7 +8,7 @@ Mimic the macOS font on Ubuntu (the whole system and most websites).
 </div>
 
 ## Introduction
-I want to bring the smooth font UX on macOS into Ubuntu GNOME/ KDE Plasma (Kubuntu).
+I want to bring the smooth font UX on macOS into Ubuntu GNOME, Ubuntu MATE, and KDE Plasma (Kubuntu).
 
 So I chose the font `Inter`, it is the font used on Figma and ElementaryOS, and it is open-source.
 
@@ -41,7 +41,13 @@ I also use the font alias to trigger `-apple-system`, `Arial` font on almost web
     Plasma version:
     ```bash
     ./tweak_plasma.sh
-    ``` 
+    ```
+
+    Ubuntu MATE version:
+    ```bash
+    chmod +x ./tweak_mate.sh
+    ./tweak_mate.sh
+    ```
 - logout and login again.
 - tadaaaa
 ### Options
@@ -52,6 +58,18 @@ Example:
 ```bash
 ./tweak.sh -s 12 -sf
 ```
+
+The same options are supported by `tweak_mate.sh`, for example:
+```bash
+./tweak_mate.sh -s 12 -sf
+```
+
+To restore the Ubuntu MATE font settings that were active before the script was first run:
+```bash
+./tweak_mate.sh --revert
+```
+
+The revert operation restores the previous MATE and fontconfig settings. If no backup exists (for example, after using an older script), the MATE keys are reset to their defaults. Fonts and packages that were installed are left in place so other applications are not disrupted.
 ## Screenshots
 
 | Before | After |
